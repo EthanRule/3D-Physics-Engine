@@ -1,0 +1,12 @@
+#include "class.h"
+#include <cassert>
+#include <iostream>
+
+void test_methodname() {
+}
+
+int main() {
+	test_methodname();
+
+	std::cout << " << tests passed! >> " << std::endl;
+}
