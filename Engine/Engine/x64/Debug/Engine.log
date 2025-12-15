@@ -1,3 +1,0 @@
-﻿  main.cpp
-C:\Users\ethan\git\3D-Physics-Engine\Engine\main.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Engine.vcxproj -> C:\Users\ethan\git\3D-Physics-Engine\Engine\x64\Debug\Engine.exe
