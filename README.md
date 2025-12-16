@@ -49,7 +49,7 @@ vkcube
 ```  
 
 
-### Compiling -> linking -> running:
+### Build and run:
 1. cd into the build directory.  
 2. `cmake .. && make && ./3DPhysicsEngine`    
 
