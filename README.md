@@ -51,7 +51,10 @@ vkcube
 
 ### Build and run:
 1. cd into the build directory.  
-2. `cmake .. && make && ./3DPhysicsEngine`    
+2.
+```
+cmake .. && make && ./3DPhysicsEngine
+```
 
 ### Learning Resources:
 https://www.glfw.org/docs/latest/vulkan_guide.html  
