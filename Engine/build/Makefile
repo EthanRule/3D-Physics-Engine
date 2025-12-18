@@ -129,6 +129,30 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3DPhysicsEngine.dir/build.make CMakeFiles/3DPhysicsEngine.dir/build
 .PHONY : 3DPhysicsEngine/fast
 
+PhysicsEngine/engine.o: PhysicsEngine/engine.cpp.o
+.PHONY : PhysicsEngine/engine.o
+
+# target to build an object file
+PhysicsEngine/engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/3DPhysicsEngine.dir/build.make CMakeFiles/3DPhysicsEngine.dir/PhysicsEngine/engine.cpp.o
+.PHONY : PhysicsEngine/engine.cpp.o
+
+PhysicsEngine/engine.i: PhysicsEngine/engine.cpp.i
+.PHONY : PhysicsEngine/engine.i
+
+# target to preprocess a source file
+PhysicsEngine/engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/3DPhysicsEngine.dir/build.make CMakeFiles/3DPhysicsEngine.dir/PhysicsEngine/engine.cpp.i
+.PHONY : PhysicsEngine/engine.cpp.i
+
+PhysicsEngine/engine.s: PhysicsEngine/engine.cpp.s
+.PHONY : PhysicsEngine/engine.s
+
+# target to generate assembly for a file
+PhysicsEngine/engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/3DPhysicsEngine.dir/build.make CMakeFiles/3DPhysicsEngine.dir/PhysicsEngine/engine.cpp.s
+.PHONY : PhysicsEngine/engine.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 3DPhysicsEngine"
+	@echo "... PhysicsEngine/engine.o"
+	@echo "... PhysicsEngine/engine.i"
+	@echo "... PhysicsEngine/engine.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

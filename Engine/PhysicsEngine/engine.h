@@ -1,3 +1,8 @@
+#define GLFW_INCLUDE_VULKAN
+#include <GLFW/glfw3.h>
+#include<stdexcept>
+#include<cstdlib>
+
 /* 
 This is the main class for the backend of the 3D Physics Engine.
 Design Patterns: Singleton, Information Expert.
@@ -16,9 +21,18 @@ public:
 	Engine(Engine&&) = delete; // Move constructor
 	Engine& operator=(Engine&&) = delete; // Move assignment
 	
-	void blank();
+	void run();
 private:
+	const uint32_t WIDTH = 800;
+	const uint32_t HEIGHT = 600;
+	GLFWwindow* window;
+	VkInstance instance;
 	Engine() = default;
+	void initVulkan();
+	void initWindow();
+	void mainLoop();
+	void cleanup();
+	void createInstance();
 
 protected:
 	

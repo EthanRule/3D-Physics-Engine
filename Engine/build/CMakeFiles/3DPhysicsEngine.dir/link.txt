@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/3DPhysicsEngine.dir/main.cpp.o -o 3DPhysicsEngine  /usr/lib/x86_64-linux-gnu/libvulkan.so /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 
+/usr/bin/c++ CMakeFiles/3DPhysicsEngine.dir/main.cpp.o CMakeFiles/3DPhysicsEngine.dir/PhysicsEngine/engine.cpp.o -o 3DPhysicsEngine  /usr/lib/x86_64-linux-gnu/libvulkan.so /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 

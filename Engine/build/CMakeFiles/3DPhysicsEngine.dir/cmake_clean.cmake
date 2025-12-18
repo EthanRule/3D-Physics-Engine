@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "3DPhysicsEngine"
   "3DPhysicsEngine.pdb"
+  "CMakeFiles/3DPhysicsEngine.dir/PhysicsEngine/engine.cpp.o"
+  "CMakeFiles/3DPhysicsEngine.dir/PhysicsEngine/engine.cpp.o.d"
   "CMakeFiles/3DPhysicsEngine.dir/main.cpp.o"
   "CMakeFiles/3DPhysicsEngine.dir/main.cpp.o.d"
 )

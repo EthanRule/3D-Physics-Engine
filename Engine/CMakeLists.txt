@@ -10,7 +10,7 @@ find_package(Vulkan REQUIRED)
 find_package(glfw3 REQUIRED)
 
 # Add executable
-add_executable(${PROJECT_NAME} main.cpp)
+add_executable(${PROJECT_NAME} main.cpp PhysicsEngine/engine.cpp)
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE Vulkan::Vulkan glfw)
