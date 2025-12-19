@@ -1,6 +1,7 @@
-## 3D physics engine
+# 3D Physics Engine
+3D Physics Engine built with Vulkan.
 
-### Dependancies
+## Dependancies
 
 **Install All:**
 ```
@@ -48,7 +49,6 @@ vulkaninfo
 vkcube
 ```  
 
-
 ### Build and run:
 1. cd into the build directory.  
 2.
@@ -56,6 +56,10 @@ vkcube
 cmake .. && make && ./3DPhysicsEngine
 ```
 
-### Learning Resources:
-https://www.glfw.org/docs/latest/vulkan_guide.html  
-https://vulkan-tutorial.com/  
+### Credits:
+https://www.vulkan.org/
+https://gcc.gnu.org/
+
+### Resources:
+https://vulkan-tutorial.com
+https://cplusplus.com/

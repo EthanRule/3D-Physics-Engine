@@ -129,12 +129,26 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3DPhysicsEngine.dir/build.make CMakeFiles/3DPhysicsEngine.dir/build
 .PHONY : 3DPhysicsEngine/fast
 
+#=============================================================================
+# Target rules for targets named EngineTests
+
+# Build rule for target.
+EngineTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EngineTests
+.PHONY : EngineTests
+
+# fast build rule for target.
+EngineTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/build
+.PHONY : EngineTests/fast
+
 PhysicsEngine/engine.o: PhysicsEngine/engine.cpp.o
 .PHONY : PhysicsEngine/engine.o
 
 # target to build an object file
 PhysicsEngine/engine.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3DPhysicsEngine.dir/build.make CMakeFiles/3DPhysicsEngine.dir/PhysicsEngine/engine.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/PhysicsEngine/engine.cpp.o
 .PHONY : PhysicsEngine/engine.cpp.o
 
 PhysicsEngine/engine.i: PhysicsEngine/engine.cpp.i
@@ -143,6 +157,7 @@ PhysicsEngine/engine.i: PhysicsEngine/engine.cpp.i
 # target to preprocess a source file
 PhysicsEngine/engine.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3DPhysicsEngine.dir/build.make CMakeFiles/3DPhysicsEngine.dir/PhysicsEngine/engine.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/PhysicsEngine/engine.cpp.i
 .PHONY : PhysicsEngine/engine.cpp.i
 
 PhysicsEngine/engine.s: PhysicsEngine/engine.cpp.s
@@ -151,7 +166,32 @@ PhysicsEngine/engine.s: PhysicsEngine/engine.cpp.s
 # target to generate assembly for a file
 PhysicsEngine/engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/3DPhysicsEngine.dir/build.make CMakeFiles/3DPhysicsEngine.dir/PhysicsEngine/engine.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/PhysicsEngine/engine.cpp.s
 .PHONY : PhysicsEngine/engine.cpp.s
+
+Tests/engine_tests.o: Tests/engine_tests.cpp.o
+.PHONY : Tests/engine_tests.o
+
+# target to build an object file
+Tests/engine_tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/Tests/engine_tests.cpp.o
+.PHONY : Tests/engine_tests.cpp.o
+
+Tests/engine_tests.i: Tests/engine_tests.cpp.i
+.PHONY : Tests/engine_tests.i
+
+# target to preprocess a source file
+Tests/engine_tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/Tests/engine_tests.cpp.i
+.PHONY : Tests/engine_tests.cpp.i
+
+Tests/engine_tests.s: Tests/engine_tests.cpp.s
+.PHONY : Tests/engine_tests.s
+
+# target to generate assembly for a file
+Tests/engine_tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EngineTests.dir/build.make CMakeFiles/EngineTests.dir/Tests/engine_tests.cpp.s
+.PHONY : Tests/engine_tests.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +226,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... 3DPhysicsEngine"
+	@echo "... EngineTests"
 	@echo "... PhysicsEngine/engine.o"
 	@echo "... PhysicsEngine/engine.i"
 	@echo "... PhysicsEngine/engine.s"
+	@echo "... Tests/engine_tests.o"
+	@echo "... Tests/engine_tests.i"
+	@echo "... Tests/engine_tests.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

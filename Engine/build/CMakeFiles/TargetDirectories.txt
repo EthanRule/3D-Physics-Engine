@@ -1,3 +1,4 @@
 /home/ethan/git/3D-Physics-Engine/Engine/build/CMakeFiles/3DPhysicsEngine.dir
+/home/ethan/git/3D-Physics-Engine/Engine/build/CMakeFiles/EngineTests.dir
 /home/ethan/git/3D-Physics-Engine/Engine/build/CMakeFiles/edit_cache.dir
 /home/ethan/git/3D-Physics-Engine/Engine/build/CMakeFiles/rebuild_cache.dir

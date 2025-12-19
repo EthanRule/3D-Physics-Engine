@@ -52,4 +52,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/3DPhysicsEngine.dir/DependInfo.cmake"
+  "CMakeFiles/EngineTests.dir/DependInfo.cmake"
   )

@@ -9,9 +9,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Vulkan REQUIRED)
 find_package(glfw3 REQUIRED)
 
-# Add executable
+# Main
 add_executable(${PROJECT_NAME} main.cpp PhysicsEngine/engine.cpp)
-
-# Link libraries
 target_link_libraries(${PROJECT_NAME} PRIVATE Vulkan::Vulkan glfw)
+
+# Tests
+add_executable(EngineTests Tests/engine_tests.cpp PhysicsEngine/engine.cpp)
+target_link_libraries(EngineTests PRIVATE Vulkan::Vulkan glfw)
 
