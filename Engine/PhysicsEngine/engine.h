@@ -38,13 +38,22 @@ private:
 	
 	GLFWwindow* window;
 	VkInstance instance;
+	VkDebugUtilsMessengerEXT debugMessenger;
 	Engine() = default;
 	void initVulkan();
+	void setupDebugMessenger();
 	void initWindow();
 	void mainLoop();
 	void cleanup();
 	void createInstance();
 	bool checkValidationLayerSupport();
+	std::vector<const char*> getRequiredExtensions();
+	static VKAPI_ATTR VkBool32 VKAPI_CALL debugCallback(
+			VkDebugUtilsMessageSeverityFlagBitsEXT messageSeverity,
+			VkDebugUtilsMessageTypeFlagsEXT messageType,
+			const VkDebugUtilsMessengerCallbackDataEXT* pCallbackData,
+			void* pUserData);
+
 
 protected:
 	
