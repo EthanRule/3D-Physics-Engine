@@ -57,9 +57,9 @@ cmake .. && make && ./3DPhysicsEngine
 ```
 
 ### Credits:
-https://www.vulkan.org/
-https://gcc.gnu.org/
+https://www.vulkan.org/  
+https://gcc.gnu.org/  
 
 ### Resources:
-https://vulkan-tutorial.com
-https://cplusplus.com/
+https://vulkan-tutorial.com  
+https://cplusplus.com/  
