@@ -239,15 +239,6 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Value Computed by CMake
-VulkanProject_BINARY_DIR:STATIC=/home/ethan/git/3D-Physics-Engine/Engine/build
-
-//Value Computed by CMake
-VulkanProject_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-VulkanProject_SOURCE_DIR:STATIC=/home/ethan/git/3D-Physics-Engine/Engine
-
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND
 

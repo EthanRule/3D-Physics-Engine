@@ -49,11 +49,9 @@ vulkaninfo
 vkcube
 ```  
 
-### Build and run:
-1. cd into the build directory.  
-2.
+### Compile -> Link -> Execute:
 ```
-cmake .. && make && ./3DPhysicsEngine
+./build.sh
 ```
 
 ### Credits:
