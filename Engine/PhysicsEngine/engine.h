@@ -3,11 +3,20 @@
 #include <stdexcept>
 #include <cstdlib>
 #include <vector>
+#include <optional>
 
 /* 
 This is the main class for the backend of the 3D Physics Engine.
 Design Patterns: Singleton, Information Expert.
 */
+
+struct QueueFamilyIndices {
+	std::optional<uint32_t> graphicsFamily;
+	
+	bool isComplete() {
+		return graphicsFamily.has_value();
+	}
+};
 
 class Engine {
 public:
@@ -42,9 +51,14 @@ private:
 	Engine() = default;
 	void initVulkan();
 	void setupDebugMessenger();
+
+	void pickPhysicalDevice();
 	void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT& createInfo);
 	void initWindow();
 	void mainLoop();
+
+	bool isDeviceSuitable(VkPhysicalDevice device);
+	QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device);
 	void cleanup();
 	void createInstance();
 	bool checkValidationLayerSupport();
